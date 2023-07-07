@@ -13,7 +13,7 @@ function Header({
   children,
   menuOptions,
   isReturnEnabled,
-  onClickReturnButton,
+  //onClickReturnButton,
   isSticky,
   WhiteLabeling,
   ...props
@@ -48,9 +48,6 @@ function Header({
               <Icon name="chevron-left" className="w-8 text-primary-active" />
             )}
             <div className="ml-4">
-              {WhiteLabeling?.createLogoComponentFn?.(React, props) || (
-                <Svg name="logo-ohif" />
-              )}
             </div>
           </div>
         </div>
